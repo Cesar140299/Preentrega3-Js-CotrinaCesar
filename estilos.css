@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgba(0, 238, 255, 0.308)
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+}
+main{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    gap: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.solicitar_turno, .mis_turnos {
+    padding: 25px;
+    border: solid 2px #000000;
+}
+.solicitar_turno--formulario, .mis_turnos--formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+.nombre, .apellido, .dni, .fecha, .mis_turnos--input{
+    border-radius: 5px;
+    min-height: 30px;
+    margin-right: 0;
+    margin: 5px;
+}
+
+.boton_mostrar, .boton_agendar{
+    border-radius: 5px;
+    min-height: 30px;
+    padding: 5px;
+}
+
+.boton_agendar:hover{
+    background-color: rgba(0, 102, 255, 0.925);
+    box-shadow: 3px 4px 13px;
+    cursor: pointer;
+}
+.boton_mostrar:hover{
+    background-color: rgba(0, 102, 255, 0.925);
+    box-shadow: 3px 4px 13px;
+    cursor: pointer;
+}
+
+.modo_oscuro{
+    background-color: rgba(10, 12, 12, 0.911);
+}
+
+.dark_mode{
+    min-width: 15px;
+    padding: 5px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    border-radius: 5px;
+}
+.dark_mode:hover{
+    background-color: #98a1a5;
+}
+
+.dark{
+    border-color: #ffffff;
+    color: #98a1a5;
+
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+}

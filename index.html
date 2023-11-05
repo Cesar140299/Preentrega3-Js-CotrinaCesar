@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Turnos</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body >
+    <div>
+        <button class="dark_mode" id="color_mode">Cambiar a modo oscuro</button>
+    </div>
+
+    <h1>
+        Bienvenido al Sistema de Gestion de Turnos Online
+    </h1>
+    <main>
+        <div class="solicitar_turno ">
+            <h2>Solicitar un nuevo Turno</h2>
+            <form action="" class="solicitar_turno--formulario">
+                <input type="text" placeholder="Nombre" class="nombre">
+                <input type="text" placeholder="Apellido" class="apellido">
+                <input type="number" placeholder="DNI" class="dni">
+                <input type="datetime-local" placeholder="Fecha" class="fecha">
+                <input type="submit" value="Agendar" class="boton_agendar">
+            </form>
+            <p class="abajo_solicitar_turno"></p>
+        </div>
+        <div class="mis_turnos ">
+            <h2>Ver mis turnos asignados</h2>
+            <form action="" class="mis_turnos--formulario">
+                <input type="text" placeholder="Coloque su DNI" class="mis_turnos--input">
+                <input type="submit" value="Mostrar" class="boton_mostrar">
+            </form>
+            <p class="abajo_mis_turnos"></p>
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
